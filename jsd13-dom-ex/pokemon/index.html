@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Image Finder</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    #progressX {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+}
+
+.pokemon {
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Kanit", sans-serif;
+}
+
+.pokemon img {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.pokemon span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#btn-pokemon{
+    font-family: "Kanit", sans-serif;
+}
+.stats {
+    text-align: left;
+}
+
+.stat {
+    display: grid;
+    grid-template-columns: 80px 1fr 35px;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.bar {
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: #4caf50;
+    border-radius: 5px;
+}
+  </style>
+</head>
+<body>
+    <h1>Random Pokémon</h1>
+
+
+    <div id="progressX"></div>
+
+  <button id="btn-pokemon">Find New Pokemon</button>
+
+    <li id ="pokemon-history"></li>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
